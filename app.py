@@ -22,3 +22,6 @@ def home():
 def post_data():
     data = DB.find()
     return render_template("card.html", data=data)
+
+if __name__ == "__main__":
+    app.run(debug=True)
